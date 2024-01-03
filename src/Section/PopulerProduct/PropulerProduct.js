@@ -16,14 +16,15 @@ const PropulerProduct = () => {
           selections. Discover a world of comfort, design, and value.
         </p>
       </div>
-      <div className='flex flex-wrap ml-2 mt-4 justify-center gap-10 grid-cols-1  '>
-        <a href='/' className='flex flex-wrap ml-2 mt-10 justify-center gap-10 grid-cols-1'>
+      <div className='flex flex-wrap mt-11 justify-center gap-10'>
 
-        {products.map((product)=>(
-          <PopularProductCard key={product.name} {...product} />
-        ))}
-        </a>
-      </div>
+  {products.map((product) => (
+    <a href='/' key={product.name} className='flex flex-wrap m-2 justify-center'>
+      <PopularProductCard {...product} />
+    </a>
+  ))}
+
+</div>
     </section>
   )
 }
